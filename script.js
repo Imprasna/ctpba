@@ -102,3 +102,8 @@ function myFunction() {
   // Alert the copied text
   alert("Copied the text: " + copyText.value);
 }
+
+// Preloader
+window.addEventListener('load', function() {
+  document.getElementById('preloader').style.display = 'none';
+});
