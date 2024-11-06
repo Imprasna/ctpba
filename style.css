@@ -140,6 +140,7 @@ span.logoo > img {
         background-color: var(--primary);
         opacity: 0;
         transition: all 0.2s ease;
+        visibility: hidden;
     }
 
     .nav .nav__items {
@@ -1157,6 +1158,27 @@ footer::before {
     line-height: 1.6;
 }
 
+.footer_ps > p > a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 1.7;
+    font-size: 1.3rem;
+}
+
+.footer_ps > p {
+    position: relative;
+}
+
+.footer_ps > p:not(:last-child):after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    left: 0;
+    top: 100%;
+}
+
 img {
     height: calc(0.3 * var(--m));
     object-fit: cover;
@@ -1210,3 +1232,58 @@ img {
 }
 
 /* End of Footer */
+
+/* Responsive */
+@media screen and (max-width: 580px) and (min-width: 260px) {
+
+    .porfile_cards {
+        flex-wrap: wrap;
+    }
+
+    .pricing-table {
+        flex-wrap: wrap;
+        gap: 60px;
+    }
+
+    .hero-section {
+        max-width: 90vw;
+        width: 100%;
+    }
+
+    .title_name, .desc, .org, .cta {
+        margin-bottom: 1rem;
+    }
+
+    .payment>h2 {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .payment>span, blockquote {
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    footer {
+        padding: 5rem 4vw;
+    }
+
+    .footer_icon {
+        width: 80vw;
+        height: 140px;
+        margin-left: -14px;
+    }
+
+    .fc .fc-toolbar-title {
+        font-size: 1.15em;
+        margin: 0px;
+    }
+
+    .fc-event-title {
+        font-size: 9px !important;
+        color: #4b00fa !important;
+        font-weight: 700 !important;
+        position: absolute;
+        top: 70%;
+    }
+}
