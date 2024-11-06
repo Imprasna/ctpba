@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTPBA</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./prasannaprofile.css">
+    <link rel="stylesheet" href="./profile.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npsm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet">
+    <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.15/index.global.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.15/index.global.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+    <script src="./calendar.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const yrSpan = document.querySelector('.hack14-year');
+            const currentYr = new Date().getFullYear();
+            yrSpan.textContent = currentYr;
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->    
+    <nav class="sticky navbar">
+        <div class="brand  display__logo">
+            <a href="#home" class="nav__link"> <span class="logoo"><img src="./assets/navbar_logo.jpg" alt=""></span></a>
+        </div>
+    
+        <input type="checkbox" id="nav" class="hidden" />
+        <label for="nav" class="nav__open"><i></i><i></i><i></i></label>
+        <div class="nav">
+            <ul class="nav__items">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#sessions" class="nav__link">Sessions</a></li>
+                <li class="nav__item"><a href="#coaches" class="nav__link">Coaches</a></li>
+                <li class="nav__item"><a href="#pricing" class="nav__link">Pricing</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End of Navbar -->
+
+    <!-- Hero Section -->
+     <section id="home">
+        <div class="container">
+            <div class="home">
+                <img src="./assets/banner.jpg" alt="">
+                <div class="hero-section">
+                    <p class="title_name">Chennai Talents Pickleball Academy</p>
+                    <p class="desc">Learn pickleball professionally</p>
+                    <p class="org">Organized for both <strong>Children</strong> & <strong>Adults</strong>. <br> Organized by skill level: <strong><u>Beginner</u></strong>, <strong><u>Intermediate</u></strong>, <strong><u>Advanced</u></strong> & <strong><u>Pro</u></strong></p>
+                    <p class="cta">For More Information, Contact <br><a href="+91 73582 28529">+91 73582 28529</a></p>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- End of Hero Section -->
+
+    <!-- Sessions -->
+    <div id="sessions">
+        <div class="container">
+            <div class="row">
+                <div class="section_header">
+                    <h1>November Session</h1>
+                    <span>Timing 7 PM - 8 PM</span>
+                </div>
+                <div id='calendar' class="show_calendar"></div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Sessions -->
+
+    <!-- Profile card -->
+    <section id="coaches">
+        <div class="container">
+            <div class="row">
+                <div class="section_header">
+                    <h1 class="coach-heading">CTPBA Coaches</h1>
+                </div>
+                <div class="porfile_cards">
+                    <!-- Vimal Profile -->
+                    <div>
+                        <div class="card" data-state="#about">
+                            <div class="card-header">
+                                <div class="card-cover"
+                                    style="background-image: url('https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80')">
+                                </div>
+                                <img class="card-avatar" src="./assets/Vimal.png" alt="avatar" />
+                                <h1 class="card-fullname">Vimalraj Jayachandran</h1>
+                                <h2 class="card-jobtitle">PPR Certified Coach</h2>
+                            </div>
+                            <div class="card-main">
+                                <div class="card-section is-active" id="about">
+                                    <div class="card-content">
+                                        <h2 class="dupr_points">DUPR : 5.094</h2>
+                                        <div class="card-subtitle">ABOUT</div>
+                                        <p class="card-desc">After over 15 years immersed in professional tennis, I
+                                            found myself searching for something new to ignite my passion. Eleven months
+                                            ago, I picked up a pickleball paddle on a whim, and it changed everything.
+                                            From that first game, I felt a spark, a joy I hadn’t felt in years. Today,
+                                            pickleball isn’t just a game for me; it’s become a way of life. As a
+                                            PPR-certified coach and 5+ DUPR-rated player, I’m proud to be one of India’s
+                                            top players, driven by a genuine love for the sport and a desire to help YOU
+                                            and the sport grow.</p>
+                                    </div>
+                                    <div class="card-social">
+                                        <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z" />
+                                            </svg></a>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path
+                                                    d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z" />
+                                            </svg></a>
+                                        <a href="#"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M301 256c0 24.852-20.148 45-45 45s-45-20.148-45-45 20.148-45 45-45 45 20.148 45 45zm0 0" />
+                                                <path
+                                                    d="M332 120H180c-33.086 0-60 26.914-60 60v152c0 33.086 26.914 60 60 60h152c33.086 0 60-26.914 60-60V180c0-33.086-26.914-60-60-60zm-76 211c-41.355 0-75-33.645-75-75s33.645-75 75-75 75 33.645 75 75-33.645 75-75 75zm86-146c-8.285 0-15-6.715-15-15s6.715-15 15-15 15 6.715 15 15-6.715 15-15 15zm0 0" />
+                                                <path
+                                                    d="M377 0H135C60.562 0 0 60.563 0 135v242c0 74.438 60.563 135 135 135h242c74.438 0 135-60.563 135-135V135C512 60.562 451.437 0 377 0zm45 332c0 49.625-40.375 90-90 90H180c-49.625 0-90-40.375-90-90V180c0-49.625 40.375-90 90-90h152c49.625 0 90 40.375 90 90zm0 0" />
+                                            </svg></a>
+                                        <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 002.882 0z" />
+                                            </svg></a>
+                                    </div>
+                                </div>
+                                <div class="card-section" id="experience">
+                                    <div class="card-content">
+                                        <div class="card-subtitle">ACHIEVEMENTS & EXPERIENCE</div>
+                                        <div class="card-timeline">
+                                            <div class="card-item">
+                                                <div class="card-item-title">Best Pickleball player in South India
+                                                    (according to DUPR)</div>
+                                            </div>
+                                            <!-- <div class="card-item" data-year="2016"> -->
+                                            <div class="card-item">
+                                                <div class="card-item-title">Featured in New Indian Express</div>
+                                            </div>
+                                            <div class="card-item">
+                                                <div class="card-item-title">Winner in several tournaments in pro
+                                                    category</div>
+                                            </div>
+                                            <div class="card-item">
+                                                <div class="card-item-title">Got drafted for both the seasons of MLP
+                                                    Australia</div>
+                                            </div>
+                                            <div class="card-item">
+                                                <div class="card-item-title">Victories against several national
+                                                    champions</div>
+                                            </div>
+                                            <div class="card-item">
+                                                <div class="card-item-title">2 time medalist in South India Premiere
+                                                    League</div>
+                                            </div>
+                                            <div class="card-item">
+                                                <div class="card-item-title">2 time semi finalist in State championship
+                                                </div>
+                                            </div>
+                                            <div class="card-item">
+                                                <div class="card-item-title">Ice water Pickle master winner in mixed
+                                                    doubles</div>
+                                            </div>
+                                            <div class="card-item">
+                                                <div class="card-item-title">3 P20’s 4 medals</div>
+                                            </div>
+                                            <div class="card-item">
+                                                <div class="card-item-title">Commentator : Australian Open 2024</div>
+                                            </div>
+                                            <div class="card-item">
+                                                <div class="card-item-title">Commentator : Roland Garros 2023, 2024
+                                                </div>
+                                            </div>
+                                            <div class="card-item">
+                                                <div class="card-item-title">Commentator : Paris Olympics 2024</div>
+                                            </div>
+                                            <div class="card-item">
+                                                <div class="card-item-title">Former International Tennis Player</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-section" id="contact">
+                                    <div class="card-content">
+                                        <div class="card-subtitle">CONTACT</div>
+                                        <div class="card-contact-wrapper">
+                                            <div class="card-contact">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                                    <circle cx="12" cy="10" r="3" />
+                                                </svg>
+                                                Aminjikarai, Chennai, Tamil Nadu - 600029
+                                            </div>
+                                            <div class="card-contact">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path
+                                                        d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+                                                </svg>
+                                                <a href="tel:+91 73582 28529">(+91) 73582 28529</a>
+                                            </div>
+                                            <div class="card-contact">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path
+                                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                                    <path d="M22 6l-10 7L2 6" />
+                                                </svg>
+                                                <a href="mailto:vimaljaypb@gmail.com">vimaljaypb@gmail.com</a>
+                                            </div>
+                                            <button class="contact-me">WORK TOGETHER</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-buttons">
+                                    <button data-section="#about" class="is-active">ABOUT</button>
+                                    <button data-section="#experience">EXPERIENCE</button>
+                                    <button data-section="#contact">CONTACT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Rohit Profile -->
+                    <div>
+                        <div class="cardd" data-state="#aboutt">
+                            <div class="card-header">
+                                <div class="card-cover"
+                                    style="background-image: url('https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80')">
+                                </div>
+                                <img class="card-avatar"
+                                    src="https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                                    alt="avatar" />
+                                <h1 class="card-fullname">Rohit Ahuja</h1>
+                                <h2 class="card-jobtitle">CTPBA Coach</h2>
+                            </div>
+                            <div class="card-main">
+                                <div class="card-sections is-active" id="aboutt">
+                                    <div class="card-content">
+                                        <h2 class="dupr_points">DUPR : 4.677</h2>
+                                        <div class="card-subtitle">ABOUT</div>
+                                        <p class="card-desc">Multi-talented athlete and filmmaker. They've won medals in
+                                            the South India Premiere League, reached State Championship semi-finals, and
+                                            claimed titles in pickleball. Beyond sports, they've directed films and
+                                            worked as a line producer and ad film director.</p>
+                                    </div>
+                                    <div class="card-social">
+                                        <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z" />
+                                            </svg></a>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path
+                                                    d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z" />
+                                            </svg></a>
+                                        <a href="#"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M301 256c0 24.852-20.148 45-45 45s-45-20.148-45-45 20.148-45 45-45 45 20.148 45 45zm0 0" />
+                                                <path
+                                                    d="M332 120H180c-33.086 0-60 26.914-60 60v152c0 33.086 26.914 60 60 60h152c33.086 0 60-26.914 60-60V180c0-33.086-26.914-60-60-60zm-76 211c-41.355 0-75-33.645-75-75s33.645-75 75-75 75 33.645 75 75-33.645 75-75 75zm86-146c-8.285 0-15-6.715-15-15s6.715-15 15-15 15 6.715 15 15-6.715 15-15 15zm0 0" />
+                                                <path
+                                                    d="M377 0H135C60.562 0 0 60.563 0 135v242c0 74.438 60.563 135 135 135h242c74.438 0 135-60.563 135-135V135C512 60.562 451.437 0 377 0zm45 332c0 49.625-40.375 90-90 90H180c-49.625 0-90-40.375-90-90V180c0-49.625 40.375-90 90-90h152c49.625 0 90 40.375 90 90zm0 0" />
+                                            </svg></a>
+                                        <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 002.882 0z" />
+                                            </svg></a>
+                                    </div>
+                                </div>
+                                <div class="card-sections" id="experiencee">
+                                    <div class="card-content">
+                                        <div class="card-subtitle">ACHIEVEMENTS & EXPERIENCE</div>
+                                        <div class="card-timeline">
+                                            <div class="card-item">
+                                                <div class="card-item-title">2 time medalist in South India Premiere
+                                                    League</div>
+                                            </div>
+                                            <div class="card-item">
+                                                <div class="card-item-title">2 time semi finalist in State championships
+                                                </div>
+                                            </div>
+                                            <div class="card-item">
+                                                <div class="card-item-title">Ice water Pickle master winner in mixed
+                                                    doubles</div>
+                                            </div>
+                                            <div class="card-item">
+                                                <div class="card-item-title">3 P20’s 4 medals</div>
+                                            </div>
+                                            <div class="card-item">
+                                                <div class="card-item-title"> Independent filmmaker</div>
+                                            </div>
+                                            <div class="card-item">
+                                                <div class="card-item-title">Asst director on 5 films</div>
+                                            </div>
+                                            <div class="card-item">
+                                                <div class="card-item-title">Line producer and ad film director</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-sections" id="contactt">
+                                    <div class="card-content">
+                                        <div class="card-subtitle">CONTACT</div>
+                                        <div class="card-contact-wrapper">
+                                            <div class="card-contact">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                                    <circle cx="12" cy="10" r="3" />
+                                                </svg>
+                                                Egmore, Chennai, Tamil Nadu - 600029
+                                            </div>
+                                            <div class="card-contact">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path
+                                                        d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+                                                </svg>
+                                                <a href="tel:+91 98843 53935">+91 98843 53935</a>
+                                            </div>
+                                            <div class="card-contact">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path
+                                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                                    <path d="M22 6l-10 7L2 6" />
+                                                </svg>
+                                                <a href="mailto:sample@gmail.com">sample@gmail.com</a>
+                                            </div>
+                                            <button class="contact-me">WORK TOGETHER</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-buttonss">
+                                    <button data-section="#aboutt" class="is-active">ABOUT</button>
+                                    <button data-section="#experiencee">EXPERIENCE</button>
+                                    <button data-section="#contactt">CONTACT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Prasanna Profile -->
+                    <div>
+                        <div class="carddd" data-state="#abouttt">
+                            <div class="card-header">
+                                <div class="card-cover"
+                                    style="background-image: url('https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80')">
+                                </div>
+                                <img class="card-avatar" src="./assets/prasanna.jpg" alt="avatar" />
+                                <h1 class="card-fullname">Prasanna S</h1>
+                                <h2 class="card-jobtitle">CTPBA Coach</h2>
+                            </div>
+                            <div class="card-main">
+                                <div class="card-sectionss is-active" id="abouttt">
+                                    <div class="card-content">
+                                        <h2 class="dupr_points">DUPR : Nil</h2>
+                                        <div class="card-subtitle">ABOUT</div>
+                                        <p class="card-desc">Whatever tattooed stumptown art party sriracha gentrify
+                                            hashtag
+                                            intelligentsia readymade schlitz brooklyn disrupt.</p>
+                                    </div>
+                                    <div class="card-social">
+                                        <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z" />
+                                            </svg></a>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path
+                                                    d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z" />
+                                            </svg></a>
+                                        <a href="#"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M301 256c0 24.852-20.148 45-45 45s-45-20.148-45-45 20.148-45 45-45 45 20.148 45 45zm0 0" />
+                                                <path
+                                                    d="M332 120H180c-33.086 0-60 26.914-60 60v152c0 33.086 26.914 60 60 60h152c33.086 0 60-26.914 60-60V180c0-33.086-26.914-60-60-60zm-76 211c-41.355 0-75-33.645-75-75s33.645-75 75-75 75 33.645 75 75-33.645 75-75 75zm86-146c-8.285 0-15-6.715-15-15s6.715-15 15-15 15 6.715 15 15-6.715 15-15 15zm0 0" />
+                                                <path
+                                                    d="M377 0H135C60.562 0 0 60.563 0 135v242c0 74.438 60.563 135 135 135h242c74.438 0 135-60.563 135-135V135C512 60.562 451.437 0 377 0zm45 332c0 49.625-40.375 90-90 90H180c-49.625 0-90-40.375-90-90V180c0-49.625 40.375-90 90-90h152c49.625 0 90 40.375 90 90zm0 0" />
+                                            </svg></a>
+                                        <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 002.882 0z" />
+                                            </svg></a>
+                                    </div>
+                                </div>
+                                <div class="card-sectionss" id="experienceee">
+                                    <div class="card-content">
+                                        <div class="card-subtitle">ACHIEVEMENTS & EXPERIENCE</div>
+                                        <div class="card-timeline">
+                                            <div class="card-item">
+                                                <div class="card-item-title">2 time medalist in South India Premiere
+                                                    League</div>
+                                            </div>
+                                            <div class="card-item">
+                                                <div class="card-item-title">2 time semi finalist in State championships
+                                                </div>
+                                            </div>
+                                            <div class="card-item">
+                                                <div class="card-item-title">Ice water Pickle master winner in mixed
+                                                    doubles</div>
+                                            </div>
+                                            <div class="card-item">
+                                                <div class="card-item-title">3 P20’s 4 medals</div>
+                                            </div>
+                                            <div class="card-item">
+                                                <div class="card-item-title"> Independent filmmaker</div>
+                                            </div>
+                                            <div class="card-item">
+                                                <div class="card-item-title">Asst director on 5 films</div>
+                                            </div>
+                                            <div class="card-item">
+                                                <div class="card-item-title">Line producer and ad film director</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-sectionss" id="contacttt">
+                                    <div class="card-content">
+                                        <div class="card-subtitle">CONTACT</div>
+                                        <div class="card-contact-wrapper">
+                                            <div class="card-contact">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                                    <circle cx="12" cy="10" r="3" />
+                                                </svg>
+                                                Royapettah, Chennai, Tamil Nadu - 600029
+                                            </div>
+                                            <div class="card-contact">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path
+                                                        d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+                                                </svg>
+                                                <a href="tel:+91 99523 09594">+91 99523 09594</a>
+                                            </div>
+                                            <div class="card-contact">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path
+                                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                                    <path d="M22 6l-10 7L2 6" />
+                                                </svg>
+                                                <a href="mailto:prasanna@sibbc.org">prasanna@sibbc.org</a>
+                                            </div>
+                                            <button class="contact-me">WORK TOGETHER</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-buttonsss">
+                                    <button data-section="#abouttt" class="is-active">ABOUT</button>
+                                    <button data-section="#experienceee">EXPERIENCE</button>
+                                    <button data-section="#contacttt">CONTACT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Profile card -->
+
+    <!-- Pricing -->
+    <section id="pricing">
+        <div class="container">
+            <div class="row pricing">
+                <div class="section_header">
+                    <h1 class="pricing">CHOOSE YOUR PLAN</h1>
+                    <span>Coaching Charges (monthly)</span>
+                </div>
+                <div class="pricing-table">
+                    <div class="pricing-card">
+                        <h6 class="pricing-type">premium</h6>
+                        <div class="price"><span>&#x20B9;</span>10,000</div>
+                        <h5 class="plan">plan</h5>
+                        <ul class="details">
+                            <li>15 Sessions</li>
+                            <!-- <li></li> -->
+                            <li>24/4 support</li>
+                        </ul>
+                        <a href="tel:+91 73582 28529">
+                            <div class="buy-button">
+                                <h3 class="btn">subscribe</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h6 class="pricing-type">Awesome</h6>
+                        <div class="price"><span>&#x20B9;</span>7500</div>
+                        <h5 class="plan">plan</h5>
+                        <ul class="details">
+                            <li>10 Sessions</li>
+                            <!-- <li>FREE Delivery</li> -->
+                            <li>24/7 support</li>
+                        </ul>
+                        <a href="tel:+91 73582 28529">
+                            <div class="buy-button">
+                                <h3 class="btn">subscribe</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h6 class="pricing-type">basic</h6>
+                        <div class="price"><span>&#x20B9;</span>5000</div>
+                        <h5 class="plan">plan</h5>
+                        <ul class="details">
+                            <li>6 Sessions</li>
+                            <!-- <li>FREE Delivery</li> -->
+                            <li>24/7 support</li>
+                        </ul>
+                        <a href="tel:+91 73582 28529">
+                            <div class="buy-button">
+                                <h3 class="btn">subscribe</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- End of Pricing -->
+
+    <!-- Payment Banner -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="payment">
+                    <h2>Payment for Coaching Fee</h2>
+                    <span>Payment can be made to either of the following:</span>
+                    <p id="upi">7358228529</p>
+                    <button class="copy-btn" onclick="copyUPIContent()">Copy!</button>
+                    <p class="or">(or)</p>
+                    <p id="myText">tennisvimal-2@okaxis</p>
+                    <button class="copy-btn" onclick="copyContent()">Copy!</button>
+
+                    <blockquote>Please send a WhatsApp message with a screenshot of your confirmation to <a target="_blank" href="https://wa.link/u7kqa3">7358228529</a>.</blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Payment Banner -->
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="col col1">
+            <h3 class="footer_h3">Chennai Talents Pickelball Academy</h3>
+            <div class="social">
+                <a href="#" target="_blank" class="link"><img src="https://assets.codepen.io/9051928/codepen_1.png"
+                        alt="" /></a>
+                <a href="#" target="_blank" class="link"><img src="https://assets.codepen.io/9051928/x.png"
+                        alt="" /></a>
+                <a href="#" target="_blank" class="link"><img src="https://assets.codepen.io/9051928/youtube_1.png"
+                        alt="" /></a>
+            </div>
+            <p style="color: #818181; font-size: smaller"><span class="hack14-year"></span> &copy; All Rights Reserved
+            </p>
+        </div>
+        <div class="col col3 footer_ps">
+            <img class="footer_icon" src="./assets/favicon.ico" alt="">
+        </div>
+        <div class="col col2 footer_ps">
+            <p>Services</p>
+            <p>Products</p>
+            <p>Join our team</p>
+            <p>Partner with us</p>
+        </div>
+        <div class="backdrop"></div>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        let text = document.getElementById('myText').innerHTML;
+        let upi = document.getElementById('upi').innerHTML;
+        const copyContent = async () => {
+            try {
+                navigator.permissions.query({ name: "write-on-clipboard" }).then((result) => {
+                    if (result.state == "granted" || result.state == "prompt") {
+                        alert("Write access granted!");
+                    }
+                });
+                await navigator.clipboard.writeText(text);
+                console.log('Content copied to clipboard');
+            } catch (err) {
+                console.error('Failed to copy: ', err);
+            }
+        }
+        const copyUPIContent = async () => {
+            try {
+                navigator.permissions.query({ name: "write-on-clipboard" }).then((result) => {
+                    if (result.state == "granted" || result.state == "prompt") {
+                        alert("Write access granted!");
+                    }
+                });
+                await navigator.clipboard.writeText(upi);
+                console.log('Content copied to clipboard');
+            } catch (err) {
+                console.error('Failed to copy: ', err);
+            }
+        }
+    </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
