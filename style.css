@@ -1259,5 +1259,6 @@ img {
         font-weight: 700 !important;
         position: absolute;
         top: 70%;
+        left: 0;
     }
 }
